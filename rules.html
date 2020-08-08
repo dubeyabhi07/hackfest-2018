@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta name="description" content="HackFest is IIT(ISM) Dhanbad's 36-hour annual hackathon organised by the Computer Science and Engineering Society (CSES) and ACM Student Chapter, IIT(ISM) Dhanbad. It aims for student programmers from different colleges to collaborate to come up with innovative solutions to problems both old and new, and see their ideas come to life.">
+  <meta name="keywords" content="Hackfest, Hackfestism, Hackfest ISM, Hackfest IIT, Hackfest IIT ISM, Hackfest IIT (ISM), Hackfest IIT Dhanbad, Hackfest ISM Dhanbad">
+	<title>Hackfest</title>
+
+  <link rel="stylesheet" href="css/main.css">
+
+	<link rel="stylesheet" href="./Hackfest_files/css_files/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" target="_blank" href="./Hackfest_files/style.css">
+  <style media="screen">
+    @import url(../../cdn/font-awesome/css/font-awesome.min.css);
+    @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css";
+  </style>
+	<link rel="stylesheet" type="text/css" target="_blank" href="./Hackfest_files/css_files/responsive.css">
+	<link rel="stylesheet" type="text/css" target="_blank" href="./Hackfest_files/css_files/normalize.css">
+	<link target="_blank" href="./Hackfest_files/css_files/css" rel="stylesheet">
+	<link target="_blank" href="./Hackfest_files/css_files/css(1)" rel="stylesheet">
+	<link target="_blank" href="./Hackfest_files/css_files/css(2)" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./Hackfest_files/css_files/my_fonts.css">
+	<link rel="stylesheet" type="text/css" href="./Hackfest_files/css_files/style_sb.css" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css'>
+
+  <!-- Some quick changese for small devices -->
+  <style media="screen">
+    @media screen and (max-width:850px) {
+      #main .container .left .title span{
+        font-size:90px!important;
+      }
+      #main .container .left .hashtag{
+        font-size:30px!important;
+        line-height:30px!important;
+      }
+      .main-menu-form{
+        width:85%!important;
+      }
+      .main-menu-btn{
+        width:25px!important;
+        height: 25px!important;
+        top:23px!important;
+        right:20px!important;
+        line-height: 21px!important;
+      }
+      .about{
+        font-size:18px!important;
+      }
+      .sb-container div{
+        width:220px!important;
+        height:380px!important;
+      }
+      .left img{
+        width:140px;
+      }
+    }
+    @media screen and ((min-width:601px) and (max-width:850px))
+    {
+      #main .container .left {
+        left:38vw;
+        top: 20vh;
+      }
+    }
+  </style>
+	<script type="text/javascript" src="./Hackfest_files/js_files/modernizr.custom.79639.js"></script>
+  <script type="text/javascript" src="./Hackfest_files/js_files/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js"></script>
+	<script type="text/javascript" src="./Hackfest_files/js_files/masonry.js"></script>
+	<script type="text/javascript" src="./Hackfest_files/js_files/imagesloaded.min.js"></script>
+	<script type="text/javascript" src="./Hackfest_files/js_files/jquery.scrollNav.min.js"></script>
+	<script type="text/javascript" src="./Hackfest_files/js_files/main.js"></script>
+
+  <script type='text/javascript' src='./Hackfest_files/js_files/jquery.particleground.js'></script>
+  <script type='text/javascript' src='./Hackfest_files/js_files/demo_pg.js'></script>
+
+
+  <script type="text/javascript" src="./Hackfest_files/js_files/jquery.swatchbook.js"></script>
+		<script type="text/javascript">
+			$(function() {
+
+				$( '#sb-container' ).swatchbook();
+
+			});
+
+
+</script>
+
+</head>
+<body>
+<script type="text/javascript">
+$('.main-menu-btn').click(function(){
+  $('.main-menu').addClass('open');
+});
+
+$('.main-menu-close').click(function(){
+  $('.main-menu').removeClass('open');
+});
+
+$(document).click(function(event) {
+    if(!$(event.target).closest('.main-menu').length) {
+        $('.main-menu').removeClass('open');
+    }
+});
+</script>
+
+
+<div class="img">
+  <section id="main" class="bg-one" style="display: block; height:210vh;" >
+      <div id="main_logo" style="left:40px;">
+      <a target="_blank" href="http://iitism.ac.in/"><img src="Hackfest_files/logos/logo-transparent.png" alt="IIT ISM"></a>
+    </div>
+  <div class="about animated" >
+  		<div class="about-container">
+  			<div class="title text-center wow" >
+  					<h2 style="color:white;">RULES</h2>
+  					<div class="myBorder"></div>
+  			</div>
+  			<p style="font-size:16px;">
+1.  Teams must register before the last date. The date will not be extended under any circumstances.<br><br>
+2.  Students from different branches of the same college/ institute can form a team. However, students
+from different college/institutes cannot be members of the same team.<br><br>
+3.  A team must comprise of at least 3 and a maximum of 5 members.<br><br>
+4. Teams must strictly adhere to the registration rules set by the organisers. Violation of which will lead
+to cancellation of registration.<br><br>
+5.  Plagiarism or submission of copyrighted content and/or source code is strictly prohibited. If found
+guilty of these activities by one or more of its members, the whole team may be disqualified at the
+discretion of organizers and/or judges.<br><br>
+6.  Last date for submission of project idea and team member CVs is 28 Feb, 2018. Late entries will not be
+entertained.<br><br>
+7.  Submission of application does not ensure selection for any team. Screening of applications will be
+done on basis of project idea and member credentials. Only the selected teams will be participating in
+the on-site hackathon.<br><br>
+8.  College/University Photo ID is mandatory for participating in the hackathon.<br><br>
+9. All material that is related with the competition will be provided in English.<br><br>
+10. Hackfest 2018 reserves the right to disqualify any team whose conduct or project it deems
+inappropriate and remove the project from the event roster and site.<br><br>
+11. The decisions made by Hackfest 2018 and/or its appointed judges are final and binding in all
+manners and no appeals shall be entertained for any reasons whatsoever.<br><br>
+12. A participant is NOT allowed to have more than one team.<br><br>
+13. The hackathon will start at 23-03- 2018 10:00 PM and end at 25-03- 2018 10:00 AM, you work on
+your hack during the allotted time only with a total duration of 36 hours.<br><br>
+14. The event&#39;s venue is Penman Auditorium, Indian Institute of Technology (Indian School of Mines),
+Dhanbad Internal Road, Sardar Patel Nagar, Dhanbad, Jharkhand 826004, India.<br><br>
+15. There is no specific theme of the hackathon. We encourage innovation in all fields of computer
+science.<br><br>
+16. Once the hackathon starts, you will get an option to submit your project. You can submit as many
+times as you want, the last hack will be considered as the final submission.<br><br>
+17. Once the 36 hour time period starts, every team must have atleast one member working at their
+designated workstation at all times till the hackathon ends.<br><br>
+18. Every participating team&#39;s hack (project) must be developed entirely during the hackathon duration.<br><br>
+19. Teams may use open source libraries and other freely available systems / services such as Google
+Maps, Facebook Connect, Twitter feeds etc.<br><br>
+20. Any team&#39;s project&#39;s source code and documentation are the intellectual property of its members
+and belong only to the team, although we do encouraging open sourcing the projects.<br><br>
+21. It is assumed that by submitting their application for Hackfest 2018, all members of a team agree to
+all the above mentioned rules and regulations and agree to abide by them if their application is
+accepted.<br><br>
+
+  			</p>
+  		</div>
+  	</div>
+
+  	</div>
+  </section>
+
+  
+
+</div>
+  <script type="text/javascript">
+      $(".hover").mouseleave(
+      function () {
+        $(this).removeClass("hover");
+      }
+      );
+
+  </script>
+  <script src="js/main.js"></script>
+
+
+</body></html>

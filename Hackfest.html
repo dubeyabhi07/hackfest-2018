@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+      <meta name="description" content="HackFest is IIT(ISM) Dhanbad's 36-hour annual hackathon organised by the Computer Science and Engineering Society (CSES) and ACM Student Chapter, IIT(ISM) Dhanbad. It aims for student programmers from different colleges to collaborate to come up with innovative solutions to problems both old and new, and see their ideas come to life.">
+      <meta name="keywords" content="Hackfest, Hackfestism, Hackfest ISM, Hackfest IIT, Hackfest IIT ISM, Hackfest IIT (ISM), Hackfest IIT Dhanbad, Hackfest ISM Dhanbad">
+      <title>Hackfest</title>
+      <script type="text/javascript" src="./Hackfest_files/js_files/modernizr.custom.79639.js"></script>
+      <script type="text/javascript" src="./Hackfest_files/js_files/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js"></script>
+      <script type="text/javascript" src="./Hackfest_files/js_files/masonry.js"></script>
+      <script type="text/javascript" src="./Hackfest_files/js_files/imagesloaded.min.js"></script>
+      <script type="text/javascript" src="./Hackfest_files/js_files/jquery.scrollNav.min.js"></script>
+      <script type="text/javascript" src="./Hackfest_files/js_files/main.js"></script>
+      <script src="./Hackfest_files/js_files/bootstrap.js"></script>
+      <script type='text/javascript' src='./Hackfest_files/js_files/jquery.particleground.js'></script>
+      <script type='text/javascript' src='./Hackfest_files/js_files/demo_pg.js'></script>
+      <script type="text/javascript" src="./Hackfest_files/js_files/jquery.swatchbook.js"></script>
+      <script type="text/javascript">
+         $(function() {
+         
+         	$( '#sb-container' ).swatchbook();
+         
+         });
+      </script>
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="./Hackfest_files/css_files/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" target="_blank" href="./Hackfest_files/css_files/style.css">
+      <style media="screen">
+         @import url(../../cdn/font-awesome/css/font-awesome.min.css);
+         @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css";
+      </style>
+      <link rel="stylesheet" type="text/css" target="_blank" href="./Hackfest_files/css_files/responsive.css">
+      <link rel="stylesheet" type="text/css" target="_blank" href="./Hackfest_files/css_files/normalize.css">
+      <link target="_blank" href="./Hackfest_files/css_files/css" rel="stylesheet">
+      <link target="_blank" href="./Hackfest_files/css_files/css(1)" rel="stylesheet">
+      <link target="_blank" href="./Hackfest_files/css_files/css(2)" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="./Hackfest_files/css_files/my_fonts.css">
+      <link rel="stylesheet" type="text/css" href="./Hackfest_files/css_files/style_sb.css" />
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css'>
+      <!-- For the modal of the schedule -->
+      <style type="text/css">
+         body.modal-open {
+         overflow: hidden;
+         }
+         .modal-body {
+         background-image: url("bg-modal.jpg");
+         background-repeat: no-repeat;
+         background-size: 100% 100%;
+         /*background-size: cover;*/
+         /*background-attachment: fixed;*/
+         }
+         .nav-tabs>li>a{
+         font-family: 'Oswald', sans-serif;
+         }
+         .modal-header{
+         border-bottom:none;
+         }
+         .modal-footer{
+         border-top: none;
+         }
+         .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+         background: transparent;
+         border-bottom: 1px solid #262f30;
+         }
+         .nav-tabs>li>a:hover {
+         border-color: transparent;
+         }
+         .nav>li>a:focus, .nav>li>a:hover {
+         text-decoration: none;
+         background-color: transparent;
+         }
+         a:focus, a:hover {
+         color: #285f87;
+         }
+         .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+         color: #eee;
+         }
+         h4#myModalLabel, #regModalLabel{
+         font-size: 2.3em;
+         color: #ccc;
+         text-align: center;
+         font-weight:500;
+         text-transform: uppercase;
+         font-family: 'Oswald', sans-serif;
+         }
+         .modal-content {
+         border: none;
+         }
+         /*To apply a scroll bar to the modal*/
+         .modal-dialog{
+         overflow-y: initial !important
+         }
+         .modal-body{
+         height: 80vh;
+         overflow-y: auto;
+         }
+         /*Styling the scroll bar*/
+         ::-webkit-scrollbar {
+         width: 12px;
+         }
+         ::-webkit-scrollbar-track {
+         -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+         border-radius: 10px;
+         }
+         ::-webkit-scrollbar-thumb {
+         border-radius: 10px;
+         -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+         }
+         .btn-primary.focus, .btn-primary:focus {
+         color: #fff;
+         background-color: #286090;
+         }
+         @media screen and (max-width:768px){
+         #schedule_padding{
+         padding:7%;
+         }
+         }
+      </style>
+      <!-- Some quick changese for small devices -->
+      <style media="screen">
+         @media screen and (max-width:850px) {
+         #main .container .left .title span{
+         font-size:90px!important;
+         }
+         #main .container .left .hashtag{
+         font-size:30px!important;
+         line-height:30px!important;
+         }
+         .main-menu-form{
+         width:85%!important;
+         }
+         .main-menu-btn{
+         width:25px!important;
+         height: 25px!important;
+         top:23px!important;
+         right:20px!important;
+         line-height: 21px!important;
+         }
+         .about{
+         font-size:18px!important;
+         }
+         .sb-container div{
+         width:220px!important;
+         height:380px!important;
+         }
+         .left img{
+         width:140px;
+         }
+         }
+         @media screen and ((min-width:601px) and (max-width:850px))
+         {
+         #main .container .left {
+         left:38vw;
+         top: 20vh;
+         }
+         }
+      </style>
+      <style type="text/css">
+         /* body {
+         overflow-x:hidden;
+         font-family:"Oswald", sans-serif;
+         background-color:#222;
+         } */
+         .switcher {
+         font: 48px "Fira Mono", monospace;
+         color:#285f87;
+         font-weight:800;
+         text-transform: uppercase;
+         position: absolute;
+         top:50%;
+         left:50%;
+         transform:translate(-50%,-50%);
+         /*user-select:none;
+         cursor:default;/*It's here if you want it*/
+         }
+         .switcher .shift {
+         display:none;
+         }
+         .log {
+         position: absolute;
+         top:8px;
+         right:10px;
+         font-size:24px;
+         }
+         #regbutton{
+         width:210px;
+         opacity:0.75;
+         }
+         #calendar{
+         width:7vw;
+         opacity:0.6;
+         }
+         #regbutton:hover, #regbutton:focus{
+         opacity:1;
+         }
+         #calendar:hover,#calendar:focus {
+         opacity:1;
+         }
+         @media screen and (max-width:768px){
+         #calendar{
+         width:14vw;
+         }
+         }
+      </style>
+   </head>
+   <body>
+      <div id="loader-wrapper">
+         <div id="loader"></div>
+         <div class="loader-section section-left" style="color:white;font-size:4em;text-align:right;font-family:Georgia;">HACK&nbsp;&nbsp;</div>
+         <div class="loader-section section-right" style="color:white;font-size:4em;font-family:Georgia;">&nbsp;&nbsp;FEST</div>
+      </div>
+      <div class="main-menu">
+         <div class="main-menu-form">
+            <div class="main-menu-btn"><i class="fa fa-bars"></i>
+            </div>
+         </div>
+         <div class="main-menu-content">
+            <a class="main-menu-close"><i style="font-size:1.3em;"class="fa fa-close"></i></a>
+            <ul class="main-menu-nav">
+               <li><a href="#main" onclick="closeIt" class=" main-menu-close"><i class="fa fa-home fa-fw"></i>&nbsp;Home</a></li>
+               <li><a href="#about" class=" main-menu-close"><i class="fa fa-book fa-fw front"></i>&nbsp;About</a></li>
+               <li><a  data-toggle="modal" data-target="#myModal" class="main-menu-close"><i class="fa fa-calendar fa-fw"></i>&nbsp;Schedule</a></li>
+               <li><a href="#media" class=" main-menu-close"><i class="fa fa-folder fa-fw"></i>&nbsp;Gallery</a></li>
+               <li><a href="#review_title" class=" main-menu-close"><i class="fa fa-envelope fa-fw"></i>&nbsp;Testimonials</a></li>
+               <li><a href="#faq" class=" main-menu-close"><i class="fa fa-question fa-fw"></i>&nbsp;FAQ</a></li>
+               <li><a href="#sponsors" class=" main-menu-close"><i class="fa fa-users fa-fw"></i>&nbsp;Sponsors</a></li>
+            </ul>
+         </div>
+      </div>
+      <script type="text/javascript">
+         $('.main-menu-btn').click(function(){
+           $('.main-menu').addClass('open');
+         });
+         
+         $('.main-menu-close').click(function(){
+           $('.main-menu').removeClass('open');
+         });
+         
+         $(document).click(function(event) {
+             if(!$(event.target).closest('.main-menu').length) {
+                 $('.main-menu').removeClass('open');
+             }
+         });
+         
+         
+      </script>
+      <div class="img">
+         <section id="main" class="current" style="display: block" >
+            <div id="main_logo">
+               <a target="_blank" href="http://iitism.ac.in/"><img src="./Hackfest_files/logos/ism.png" class="footer_logos" alt="IIT ISM"></a>
+            </div>
+            <div class="container" id="particles" >
+               <div class="left" >
+                  <img src="./Hackfest_files/logos/logo-transparent.png">
+                  <div class="title">
+                     <span id="stroky">Hack</span>
+                     <span>Fest</span>
+                  </div>
+                  <div class="title-desc" style="color:#e9e9e9; ">
+                     <i class="icon fa fa-calendar"></i> 23-25 March 2018 | <i class="icon fa fa-university"></i> IIT (ISM) Dhanbad
+                  </div>
+                  <div class="hashtag">
+                     <span style="font-weight: 200; ">Learn. Improvise. Adapt.</span>
+                  </div>
+                  <!-- Modal -->
+               </div>
+            </div>
+            <canvas width="1371" height="655" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; z-index: -1;">
+            </canvas>
+      </div>
+      </section>
+      <img id="calendar" src="Hackfest_files/calender.png" data-toggle="modal" data-target="#myModal" style=" right:4%; bottom:14%; position:fixed;z-index:123; ">
+      <section id="about" class="bg-one" style="display: block;" >
+         <div class="about animated" >
+            <div class="about-container">
+               <div class="title text-center wow" >
+                  <h2 style="color:white;">About</h2>
+                  <div class="myBorder"></div>
+               </div>
+               <p>
+                  HackFest is IIT(ISM) Dhanbad's 36-hour annual hackathon organised by the Computer Science and Engineering Society (CSES) and ACM Student Chapter, IIT(ISM) Dhanbad.
+                  It aims for student programmers from different colleges to collaborate to come up with innovative solutions to problems both old and new, and see their ideas come to life.<br><br>
+                  HackFest provides a platform for students to develop their skills and build prototypes of products in teams and share them with the tech community. Participants get to spend a weekend having fun, meeting new people, and preparing themselves for technical careers, all the while doing what they love. They stand to gain the vital ability of performing well in a time crunch, along with technical expertise and new connections, both with other student developers and in the tech industry.<br><br>
+                  The students must work in the time frame specified to create software and hardware applications, either to implement their own ideas or to solve problem statements – issues that the tech community would like to see solved through information technology. Participants thus also get a chance to score an internship at major tech companies. Along with cool cash prizes for the winners and goodies, snacks and meals will also be provided for all.
+                  So, get ready to code your team to victory! Come join us in this celebration of the spirit of programming. Register for Hackfest right now.
+               </p>
+            </div>
+         </div>
+         <div align="center"  style="margin-bottom:5px; margin-top:0;">
+            <img  id="regbutton" src="Hackfest_files/register-here-button-sm-trans.png"  data-toggle="modal" data-target="#regModal">
+         </div>
+      </section>
+      <div id="stage">
+         <div id="rotator" style="-webkit-animation-name: rotator;">
+            <a><img alt="" class="landscape" width="140" src="./Hackfest_files/gallery/11.jpg"></a>
+            <a><img alt="" class="potrait" width="140" src="./Hackfest_files/gallery/12.jpg"></a>
+            <a><img alt="" class="square" width="140" src="./Hackfest_files/gallery/15.jpg"></a>
+            <a><img alt="" class="landscape" width="140" src="./Hackfest_files/gallery/13.jpg"></a>
+            <a><img alt="" class="potrait" width="140" src="./Hackfest_files/gallery/18.jpg"></a>
+            <a><img alt="" class="square" width="140" src="./Hackfest_files/gallery/20.jpg"></a>
+            <a><img alt="" class="landscape" width="140" src="./Hackfest_files/gallery/21.jpg"></a>
+            <a><img alt="" class="potrait" width="140" src="./Hackfest_files/gallery/22.jpg"></a>
+            <a><img alt="" class="square" width="140" src="./Hackfest_files/gallery/16.jpg"></a>
+         </div>
+      </div>
+      <script type="text/javascript">
+         document.addEventListener("DOMContentLoaded", function() {
+         
+           var rotateComplete = function() {
+             target.style.webkitAnimationName = "";
+             target.insertBefore(arr[arr.length-1], arr[0]);
+             setTimeout(function(el) {
+               el.style.webkitAnimationName = "rotator";
+             }, 0, target);
+           };
+         
+           var target = document.getElementById("rotator");
+           var arr = target.getElementsByTagName("a");
+         
+           target.addEventListener("webkitAnimationEnd", rotateComplete, false);
+         
+         }, false);
+         
+      </script>
+      <script type="text/javascript">
+         var rotateComplete = function() {
+           with(target.style) {
+             webkitAnimationName = MozAnimationName = msAnimationName = "";
+           }
+           target.insertBefore(arr[arr.length-1], arr[0]);
+           setTimeout(function(el) {
+             with(el.style) {
+               webkitAnimationName = MozAnimationName = msAnimationName = "rotator";
+             }
+           }, 0, target);
+         };
+         
+         var target = document.getElementById("rotator");
+         var arr = target.getElementsByTagName("a");
+         
+         target.addEventListener("webkitAnimationEnd", rotateComplete, false);
+         target.addEventListener("animationend", rotateComplete, false);
+         target.addEventListener("MSAnimationEnd", rotateComplete, false);
+         
+      </script>
+      <div id="review_title" class="title text-center wow bg-one" >
+         <h2 style="color:white;margin: 0 auto;padding: 20px 0; font-size:2.2em; text-transform:uppercase;">Testimonials</h2>
+         <div class="myBorder"></div>
+      </div>
+      <div id="app" class="bg-one row" >
+         <card data-image="#">
+            <h1 slot="header" style="font-size:1.5em;"><img class="who" style="width:100%; border-radius:50%;" src="./Hackfest_files/testimonials/4.jpg" alt="Professor"/>Prof. Chiranjeev Kumar<br><strong class="vv">IIT(ISM) Dhanbad</strong></h1>
+            <p slot="content" >Being surrounded with very interesting people, engaging in fun activities and having your brain stimulated with new technologies are definitely a great combination for having fun.</p>
+         </card>
+         <card data-image="#">
+            <h1 slot="header" style="font-size:1.5em;"><img class="who" style="width:100%; border-radius:50%;" src="./Hackfest_files/testimonials/vaishak.png" alt="Professor"/>Vaishak Shanbhag <br> <strong class="vv">Atkins</strong></h1>
+            <p slot="content" >My experience of the inaugural Hackfest was simply fantastic.
+               ideas and enthusiasm of the participants were impressive. It was a professionally organised event, and all credit goes to
+               organisers and the participants.
+            </p>
+         </card>
+         <card data-image="#">
+            <h1 slot="header" style="font-size:1.5em;"><img class="who" style="width:100%; border-radius:50%;" src="./Hackfest_files/testimonials/ayan.jpg" alt="Professor"/>Ayan Chaudhary<br><strong class="vv">Mozilla</strong></h1>
+            <p slot="content" >Hackfest'16 at ISM dhanbad was a perfect place for me to
+               learn and relearn new things. Though I went there as a hackathon
+               Mentor, but I learnt a lot of new things as well as I taught pupil a lot
+               of new things too.
+            </p>
+         </card>
+         <card data-image="#">
+            <h1 slot="header" style="font-size:1.5em;"><img class="who" style="width:100%; border-radius:50%;" src="./Hackfest_files/testimonials/mohit.jpg" alt="Professor"/>Mohit Mittal<br><strong class="vv">IIT(ISM) Dhanbad</strong></h1>
+            <p slot="content" >My experience of Hackfest'17 was fabulous. Hackfest has become a brainstorming session for me. It was one of those times when I found perfect balance between talent, technology and passion. Thanks to organizers and faculty co-ordinators, who allowed me to be a part of this awesome event.</p>
+         </card>
+         <card data-image="#">
+            <h1 slot="header" style="font-size:1.5em;"><img class="who" style="width:100%; border-radius:50%;" src="./Hackfest_files/testimonials/pranav.jpg" alt="Professor"/>Pranav Chitrio <br> <strong class="vv">Winner, Hackfest'17</strong></h1>
+            <p slot="content" >Hackfest 2017 was a good recreational activity. You get to learn a lot of stuff in that time span, the experience you gain is very useful. Apart from some technical glitches the organization of the event was also very good.</p>
+         </card>
+         ,
+      </div>
+      <script type="text/javascript">
+         Vue.config.devtools = true;
+         
+         Vue.component('card', {
+         template: '\n    <div class="card-wrap"\n      @mousemove="handleMouseMove"\n      @mouseenter="handleMouseEnter"\n      @mouseleave="handleMouseLeave"\n      ref="card">\n      <div class="card"\n        :style="cardStyle">\n        <div class="card-bg" :style="[cardBgTransform, cardBgImage]"></div>\n        <div class="card-info">\n          <slot name="header"></slot>\n          <slot name="content"></slot>\n        </div>\n      </div>\n    </div>',
+         mounted: function mounted() {
+           this.width = this.$refs.card.offsetWidth;
+           this.height = this.$refs.card.offsetHeight;
+         },
+         
+         props: ['dataImage'],
+         data: function data() {
+           return {
+             width: 0,
+             height: 0,
+             mouseX: 0,
+             mouseY: 0,
+             mouseLeaveDelay: null
+           };
+         },
+         computed: {
+           mousePX: function mousePX() {
+             return this.mouseX / this.width;
+           },
+           mousePY: function mousePY() {
+             return this.mouseY / this.height;
+           },
+           cardStyle: function cardStyle() {
+             var rX = this.mousePX * 30;
+             var rY = this.mousePY * -30;
+             return {
+               transform: 'rotateY(' + rX + 'deg) rotateX(' + rY + 'deg)'
+             };
+           },
+           cardBgTransform: function cardBgTransform() {
+             var tX = this.mousePX * -40;
+             var tY = this.mousePY * -40;
+             return {
+               transform: 'translateX(' + tX + 'px) translateY(' + tY + 'px)'
+             };
+           },
+           cardBgImage: function cardBgImage() {
+             return {
+               backgroundImage: 'url(' + this.dataImage + ')'
+             };
+           }
+         },
+         methods: {
+           handleMouseMove: function handleMouseMove(e) {
+             this.mouseX = e.pageX - this.$refs.card.offsetLeft - this.width / 2;
+             this.mouseY = e.pageY - this.$refs.card.offsetTop - this.height / 2;
+           },
+           handleMouseEnter: function handleMouseEnter() {
+             clearTimeout(this.mouseLeaveDelay);
+           },
+           handleMouseLeave: function handleMouseLeave() {
+             var _this = this;
+         
+             this.mouseLeaveDelay = setTimeout(function () {
+               _this.mouseX = 0;
+               _this.mouseY = 0;
+             }, 1000);
+           }
+         }
+         });
+         
+         var app = new Vue({
+         el: '#app'
+         });
+      </script>
+	  <section id="media" class="img2" style="display: block;">
+         <div class="title text-center wow" >
+            <h2 style="color:white;">Gallery</h2>
+            <div class="myBorder"></div>
+         </div>
+         <div class="gallary mib-container" id="mib-container" style="position: relative; height: 685.5px;">
+            <div class="grid-sizer"></div>
+            <div class="grid-item small" style="position: absolute; left: 0px; top: 0px;"><img alt="" class="landscape" src="./Hackfest_files/gallery/11.jpg"></div>
+            <div class="grid-item small" style="position: absolute; left: 342px; top: 0px;"><img alt="" class="landscape" src="./Hackfest_files/gallery/12.jpg"></div>
+            <div class="grid-item small" style="position: absolute; left: 685px; top: 455px;"><img alt="" class="square" src="./Hackfest_files/gallery/20.jpg"></div>
+            <div class="grid-item small" style="position: absolute; left: 1028px; top: 455px;"><img alt="" class="landscape" src="./Hackfest_files/gallery/21.jpg"></div>
+            <div class="grid-item small" style="position: absolute; left: 0px; top: 457px;"><img alt="" class="square" src="./Hackfest_files/gallery/22.jpg"></div>
+            <div class="grid-item small" style="position: absolute; left: 342px; top: 457px;"><img alt="" class="landscape" src="./Hackfest_files/gallery/16.jpg"></div>
+         </div>
+      </section>
+      <section id="faq" class="img3" style="display: block;">
+         <div class="title text-center wow" >
+            <h2 style="color:white;">Frequently Asked Questions</h2>
+            <div class="myBorder"></div>
+         </div>
+         <section class="main row" style="margin-left: -15vw;">
+            <div id="sb-container" class="sb-container" style="display: block;">
+               <div>
+                  <span class="faq-span">What are the rules and regulations ?</span>
+                  <hr>
+                  <p>Click <a target="_blank" href="rules.html" ><em>Here</em></a> to Know</p>
+               </div>
+               <div>
+                  <span class="faq-span">What should be the team size and composition?</span>
+                  <hr>
+                  <p>Participants have to register for the hackathon online. Teams of 3-5 can take participate in the Hackathon.</p>
+               </div>
+               <div>
+                  <span class="faq-span">Is there travelling reimbursement?</span>
+                  <hr>
+                  <p>We can’t guarantee reimbursements for everyone, but we don’t want money to keep you from experiencing Hackfest. Let us know if you still need help making your way to IIT(ISM) Dhanbad and we’ll see what we can do.</p>
+               </div>
+               <div>
+                  <span class="faq-span">What should I bring?</span>
+                  <hr>
+                  <p>You will definitely need your laptop, phone, their chargers as well as a valid student or government ID. Feel free to bring along a sleeping bag and we recommend some comfortable clothes.</p>
+               </div>
+               <div>
+                  <span class="faq-span">I don't have an idea, what should I do?</span>
+                  <hr>
+                  <p>Don't worry! We will walk you through how to generate great ideas in the beginning of Hackfest.Your team can also work on problem statements of the sponsoring companies.</p>
+               </div>
+               <div>
+                  <span class="faq-span">Who can participate?</span>
+                  <hr>
+                  <p>All university students. If you're someone who is willing to learn and wants to take a shot at changing the world, no matter what your field is, you definitely belong here. However, a selection process will be there.</p>
+               </div>
+               <div>
+                  <span class="faq-span">How much does it cost?</span>
+                  <hr>
+                  <p>Nothing. The event is absolutely free for all participants. We will provide you with the venue, food, Wi-Fi, etc. You just need to show up.</p>
+               </div>
+               <div>
+                  <span class="faq-span">I have never been to a hackathon before, what should I do?</span>
+                  <hr>
+                  <p>That's completely fine! You'll have plenty of opportunities to pick the brains of talented students around you. Furthermore, 36 hours is plenty of time to learn something new.</p>
+               </div>
+               <div>
+                  <span class="faq-span">What is hackfest?</span>
+                  <hr>
+                  <p>Hackfest is an event in which numerous tech lovers divided into teams develop a product which is a hardware or software solution to real world problems or industrial problems. Hundreds of programmers get together to build something from scratch, be it a website, app, or some other product of their imagination. There will be food, prizes and opportunities to work with representatives from various companies.</p>
+               </div>
+            </div>
+         </section>
+      </section>
+ 
+      <section id="sponsors" class="bg-one" style="display: block; padding-bottom:150px;">
+         <div class="bg" style="transform: translateY(-332.797px);"></div>
+         <div class="title text-center wow" >
+            <h2 style="color:white;">Previous Sponsors</h2>
+            <div class="myBorder"></div>
+         </div>
+         <div class="mega">
+            <div class="comp-logo">
+               <span style="color:white; margin-bottom:10px; margin-top:10px;">Mega Sponsors</span>
+               <div class="row" style="margin-top:20px;">
+                  <div class="col-sm-4" style="margin-top:20px;" >
+                     <a target="_blank" href="https://www.atkinsglobal.com/en-gb"><img src="./Hackfest_files/sponsors/atkins.svg"></a>
+                  </div>
+                  <div class="col-sm-4">
+                  </div>
+                  <div class="col-sm-4" >
+                     <a target="_blank" href="http://www.ntpc.co.in/"><img src="./Hackfest_files/sponsors/ntpc.png"></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="others">
+            <div style="text-align:center;font-size:24px;color:white; margin-bottom:10px; margin-top:10px;">Other Sponsors</div>
+            <div class="comp-logo">
+               <a target="_blank" href="https://www.venturesity.com/"><img src="./Hackfest_files/sponsors/vs.png"></a>
+            </div>
+            <div class="comp-logo">
+               <a target="_blank" href="https://www.mozilla.org/en-US/"><img src="./Hackfest_files/sponsors/mozilla.png"></a>
+            </div>
+            <div class="comp-logo">
+               <a target="_blank" href="https://github.com/"><img src="./Hackfest_files/sponsors/gh.jpg"></a>
+            </div>
+            <div class="comp-logo">
+               <a target="_blank" href="http://www.geeksforgeeks.org/"><img src="./Hackfest_files/sponsors/geek.jpg"></a>
+            </div>
+            <div class="comp-logo">
+               <a target="_blank" href="https://flock.com/"><img src="./Hackfest_files/sponsors/flock.svg"></a>
+            </div>
+            <div class="comp-logo">
+               <a target="_blank" href="https://www.hackerearth.com/"><img src="./Hackfest_files/sponsors/he.jpg"></a>
+            </div>
+            <div class="comp-logo">
+               <a target="_blank" href="https://www.jetbrains.com/"><img src="./Hackfest_files/sponsors/jb.png"></a>
+            </div>
+         </div>
+         <div class="title text-center wow" style="margin-top:130px;" >
+            <h2 style="color:white;">Previous Media Partners</h2>
+            <div class="myBorder" style="margin-bottom:20px;"></div>
+         </div>
+         <div class="media-partners">
+            <div class="comp-logo">
+               <a target="_blank" href="https://www.reweyou.in/"><img src="./Hackfest_files/sponsors/reweyou.png"></a>
+            </div>
+            <div class="comp-logo">
+               <a target="_blank" href="https://www.brainbuxa.com/"><img src="./Hackfest_files/sponsors/brainb.png"></a>
+            </div>
+            <div class="comp-logo">
+               <a target="_blank" href="http://ohcampus.com/v2/"><img src="./Hackfest_files/sponsors/ohcampus.png"></a>
+            </div>
+            <div class="comp-logo">
+               <a target="_blank" href="https://scientificindia.com/"><img src="./Hackfest_files/sponsors/sci.png"></a>
+            </div>
+            <div class="comp-logo">
+               <a target="_blank" href="https://www.campuskarma.in/"><img src="./Hackfest_files/sponsors/ck.png"></a>
+            </div>
+            <div class="comp-logo">
+               <a target="_blank" href="http://collegedesk.in/"><img src="./Hackfest_files/sponsors/collegedesk.png"></a>
+            </div>
+            <div class="comp-logo">
+               <a target="_blank" href="https://inc42.com/"><img src="./Hackfest_files/sponsors/inc.png"></a>
+            </div>
+            <div class="comp-logo">
+               <a target="_blank" href="https://collegedunia.com/"><img src="./Hackfest_files/sponsors/cd.png"></a>
+            </div>
+            <div class="comp-logo">
+               <a target="_blank" href="http://www.blogadda.com/"><img src="./Hackfest_files/sponsors/ba.jpg"></a>
+            </div>
+            <div class="comp-logo">
+               <a target="_blank" href="http://www.fuccha.in/"><img src="./Hackfest_files/sponsors/fc.png"></a>
+            </div>
+            <div class="comp-logo">
+               <a target="_blank" href="http://festpav.com/"><img src="./Hackfest_files/sponsors/fp.png"></a>
+            </div>
+            <div class="comp-logo">
+               <a target="_blank" href="https://www.crazyengineers.com/"><img src="./Hackfest_files/sponsors/ce.png"></a>
+            </div>
+            <div class="comp-logo">
+               <a target="_blank" href="https://www.collegesearch.in/"><img src="./Hackfest_files/sponsors/cs.png"></a>
+            </div>
+         </div>
+         <div id="brochure">
+            Download our <a target="_blank" href="https://drive.google.com/file/d/1CXb8jbaTGVUwiW6E3B-5qBPYTkO_8oeq/view?usp=sharing">sponsorship brochure</a>.
+         </div>
+      </section>
+      <style media="screen">
+         #brochure{
+         margin: 64px auto 0px auto;
+         font-size: 1.94em;
+         text-align: center;
+         color: #ccc;
+         }
+      </style>
+      <script type="text/javascript">
+         var $cell = $('.faq_card');
+         
+         //open and close faq_card when clicked on faq_card
+         $cell.find('.js-expander').click(function() {
+         
+         var $thisCell = $(this).closest('.faq_card');
+         
+         if ($thisCell.hasClass('is-collapsed')) {
+           $cell.not($thisCell).removeClass('is-expanded').addClass('is-collapsed');
+           $thisCell.removeClass('is-collapsed').addClass('is-expanded');
+         
+         
+         } else {
+           $thisCell.removeClass('is-expanded').addClass('is-collapsed');
+           // $cell.not($thisCell).removeClass('is-inactive');
+         }
+         });
+         
+         //close faq_card when click on cross
+         $cell.find('.js-collapser').click(function() {
+         
+         var $thisCell = $(this).closest('.faq_card');
+         
+         $thisCell.removeClass('is-expanded').addClass('is-collapsed');
+         $cell.not($thisCell).removeClass('is-inactive');
+         
+         });
+      </script>
+      <section id="footer" class="last img3" style="display: block;">
+         <div class="footer">
+            <div class="title text-center wow" >
+               <h2 style="color:white;">Our  faculty  Coordinators</h2>
+               <div class="myBorder"></div>
+            </div>
+            <div class="container">
+               <div class="row">
+                  <div class="col-sm-4">
+                     <figure class="  snip1344">
+                        <img src="Hackfest_files/team/1.jpg" alt="profile-sample1" class="background"/><img src="Hackfest_files/team/1.jpg" alt="profile-sample1" class="profile"/>
+                        <figcaption>
+                           <h3>Prof. P. K. Jana<span>Convener</span></h3>
+                           <div class="icons"><a href="mailto:NA"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                              <a href="tel:NA"><i class="fa fa-phone" aria-hidden="true"></i>
+                              </a>
+                           </div>
+                        </figcaption>
+                     </figure>
+                  </div>
+                  <div class="col-sm-4">
+                     <figure class="snip1344">
+                        <img src="Hackfest_files/team/2.jpg" alt="profile-sample1" class="background"/><img src="Hackfest_files/team/2.jpg" alt="profile-sample1" class="profile"/>
+                        <figcaption>
+                           <h3>Dr. A. C. S. Rao<span>Faculty Co-ordinator</span></h3>
+                           <div class="icons"><a href="mailto:NA"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                              <a href="tel:NA"><i class="fa fa-phone" aria-hidden="true"></i>
+                              </a>
+                           </div>
+                        </figcaption>
+                     </figure>
+                  </div>
+                  <div class="col-sm-4">
+                     <figure class="  snip1344">
+                        <img src="Hackfest_files/team/4.jpg" alt="profile-sample6" class="background"/><img src="Hackfest_files/team/4.jpg" alt="profile-sample6" class="profile"/>
+                        <figcaption>
+                           <h3>Dr. Soumen Bag<span>Faculty Co-ordinator</span></h3>
+                           <div class="icons">
+                              <a href="mailto:NA"><i class="fa fa-envelope" aria-hidden="true"></i>
+                              </a>
+                              <a href="tel:NA"><i class="fa fa-phone" aria-hidden="true"></i>
+                              </a>
+                           </div>
+                        </figcaption>
+                     </figure>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-sm-4">
+                     <figure class=" snip1344">
+                        <img src="Hackfest_files/team/3.jpg" alt="profile-sample1" class="background"/>
+                        <img src="Hackfest_files/team/3.jpg" alt="profile-sample1" class="profile"/>
+                        <figcaption>
+                           <h3>Dr. Arup Kumar Pal<span>Faculty Co-ordinator</span></h3>
+                           <div class="icons">
+                              <a href="mailto:NA"><i class="fa fa-envelope" aria-hidden="true"></i>
+                              </a>
+                              <a href="tel:NA"><i class="fa fa-phone" aria-hidden="true"></i>
+                              </a>
+                           </div>
+                        </figcaption>
+                     </figure>
+                  </div>
+                  <div class="col-sm-4">
+                     <figure class=" snip1344">
+                        <img src="Hackfest_files/team/5.jpg" alt="profile-sample7" class="background"/><img src="Hackfest_files/team/5.jpg" alt="profile-sample7" class="profile"/>
+                        <figcaption>
+                           <h3>Dr. Dharavath Ramesh<span>Faculty Co-ordinator</span></h3>
+                           <div class="icons"><a href="mailto:NA"><i class="fa fa-envelope" aria-hidden="true"></i>
+                              </a><a href="tel:NA"><i class="fa fa-phone" aria-hidden="true"></i>
+                              </a>
+                           </div>
+                        </figcaption>
+                     </figure>
+                  </div>
+                  <div class="col-sm-4">
+                     <figure class=" snip1344">
+                        <img src="Hackfest_files/team/6.jpg" alt="profile-sample6" class="background"/><img src="Hackfest_files/team/6.jpg" alt="profile-sample6" class="profile"/>
+                        <figcaption>
+                           <h3>Dr. Tarachand Amgoth<span>Faculty Co-ordinator</span></h3>
+                           <div class="icons"><a href="mailto:NA"><i class="fa fa-envelope" aria-hidden="true"></i>
+                              </a><a href="tel:NA"><i class="fa fa-phone" aria-hidden="true"></i>
+                              </a>
+                           </div>
+                        </figcaption>
+                     </figure>
+                  </div>
+               </div>
+            </div>
+            <div class="title text-center wow" style="margin-top:50px;" >
+               <h2 style="color:white;">Our  Student  Coordinators</h2>
+               <div class="myBorder"></div>
+            </div>
+            <div class="container">
+               <div class="row">
+                  <div class="col-sm-2">
+                  </div>
+                  <div class="col-sm-4">
+                     <figure class="snip1344">
+                        <img src="Hackfest_files/team/az.jpg" alt="profile-sample1" class="background"/><img src="Hackfest_files/team/az.jpg" alt="profile-sample1" class="profile"/>
+                        <figcaption>
+                           <h3>Azhaan Zahabee<span>Sponsorship Lead</span></h3>
+                           <div class="icons">
+                              <a href="https://m.facebook.com/profile.php?id=1693891679&ref=content_filter"><i class="fa fa-facebook" aria-hidden="true"></i>
+                              </a>
+                              <a href="mailto:NA"><i class="fa fa-envelope" aria-hidden="true"></i>
+                              </a>
+                              <a href="tel:NA"><i class="fa fa-phone" aria-hidden="true"></i>
+                              </a>
+                           </div>
+                        </figcaption>
+                     </figure>
+                  </div>
+                  <div class="col-sm-4">
+                     <figure class="snip1344">
+                        <img src="Hackfest_files/team/akh.jpg" alt="profile-sample1" class="background"/><img src="Hackfest_files/team/akh.jpg" alt="profile-sample1" class="profile"/>
+                        <figcaption>
+                           <h3>Ayush Khandelwal<span>Secretary, CSES</span></h3>
+                           <div class="icons">
+                              <a href="https://m.facebook.com/profile.php?id=100002417422528&ref=content_filter"><i class="fa fa-facebook" aria-hidden="true"></i>
+                              </a>
+                              <a href="mailto:NA"><i class="fa fa-envelope" aria-hidden="true"></i>
+                              </a>
+                              <a href="tel:NA"><i class="fa fa-phone" aria-hidden="true"></i>
+                              </a>
+                           </div>
+                        </figcaption>
+                     </figure>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-sm-2">
+                  </div>
+                  <div class="col-sm-4">
+                     <figure class="snip1344">
+                        <img src="Hackfest_files/team/ss.png" alt="profile-sample1" class="background"/><img src="Hackfest_files/team/ss.png" alt="profile-sample1" class="profile"/>
+                        <figcaption>
+                           <h3>Soham Satyadharma<span>Promotion Lead</span></h3>
+                           <div class="icons">
+                              <a href="https://m.facebook.com/sohamsatyadharma"><i class="fa fa-facebook" aria-hidden="true"></i>
+                              </a>
+                              <a href="mailto:NA"><i class="fa fa-envelope" aria-hidden="true"></i>
+                              </a>
+                              <a href="tel:NA"><i class="fa fa-phone" aria-hidden="true"></i>
+                              </a>
+                           </div>
+                        </figcaption>
+                     </figure>
+                  </div>
+                  <div class="col-sm-4">
+                     <figure class="snip1344">
+                        <img src="Hackfest_files/team/sq.jpg" alt="profile-sample1" class="background"/><img src="Hackfest_files/team/sq.jpg" alt="profile-sample1" class="profile"/>
+                        <figcaption>
+                           <h3>Abhishek Dubey<span>Design Lead</span></h3>
+                           <div class="icons">
+                              <a href="https://m.facebook.com/abhishek.dubey.1709"><i class="fa fa-facebook" aria-hidden="true"></i>
+                              </a>
+                              <a href="mailto:dubey07.abhishek@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>
+                              </a>
+                              <a href="tel:NA"><i class="fa fa-phone" aria-hidden="true"></i>
+                              </a>
+                           </div>
+                        </figcaption>
+                     </figure>
+                  </div>
+               </div>
+            </div>
+            <style media="screen">
+               .footer_logos{
+               width:100px;
+               display: inline-block;
+               }
+            </style>
+            <div class="bg-one row">
+               <div class="col-sm-3" style="margin: 2.5% 0px;text-align:center;">
+                  <a target="_blank" href="http://ism.acm.org/"><img src="./Hackfest_files/logos/acm.png" class="footer_logos" alt="ACM IIT(ISM) Student Chapter"></a>
+               </div>
+               <div class="col-sm-6 contact animated fadeInUp" style="opacity: 1;margin-top:100px;"">
+                  <div class="links">
+                     <a target="_blank" href="https://www.facebook.com/hackfestiitism/"><img src="./Hackfest_files/logos/fb.png" style="width: 30px;margin: 5px;">
+                     </a>
+                     <a target="_blank" href="https://twitter.com/hackfestiitism"><img src="./Hackfest_files/logos/twitter.png" style="width: 30px;border-radius:5px;margin:5px;">
+                     </a>
+                  </div>
+                  <span>Copyright © Hackfest</span><br>
+               </div>
+               <div class="col-sm-3" style="margin: 2.5% 0px;text-align:center;">
+                  <a target="_blank" href="http://csesociety.in/"><img src="./Hackfest_files/logos/cses.png" class="footer_logos" style="width:200px;" alt="CSE Society"></a>
+               </div>
+            </div>
+         </div>
+      </section>
+      </div>
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-header" style="  background: url(pattern.png);
+                  border-radius: 5px 5px 0 0;">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span style="color:white;" aria-hidden="true">&times;</span>
+                  </button>
+                  <h4 class="modal-title" id="myModalLabel">Event Schedule</h4>
+               </div>
+               <div class="modal-body">
+                  <div role="tabpanel">
+                     <!-- Nav tabs -->
+                     <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#uploadTab" aria-controls="uploadTab" role="tab" data-toggle="tab">23 March</a>
+                        </li>
+                        <li role="presentation"><a href="#browseTab" aria-controls="browseTab" role="tab" data-toggle="tab">24 March</a>
+                        </li>
+                        <li role="presentation"><a href="#farziTab" aria-controls="browseTab" role="tab" data-toggle="tab">25 March</a>
+                        </li>
+                     </ul>
+                     <!-- Tab panes -->
+                     <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="uploadTab">
+                           <style type="text/css">
+                              /* @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700|Oswald:400,300,700); */
+                              /*body {
+                              background: #e3e3e3;
+                              font-size: 16px;
+                              }*/
+                              strong {
+                              font-weight: 600;
+                              }
+                              h2 {
+                              font-family: 'Oswald', sans-serif;
+                              letter-spacing: 1.5px;
+                              color: #cccccc;
+                              font-weight: 100;
+                              font-size: 2.4em;
+                              }
+                              #content {
+                              margin-top: 50px;
+                              text-align: center;
+                              }
+                              /* Timeline */
+                              .timeline {
+                              border-left:4px solid #09518a;
+                              border-bottom-right-radius: 4px;
+                              border-top-right-radius: 4px;
+                              background: rgba(255, 255, 255, 0.03);
+                              color: #333;
+                              font-family: 'Source Sans Pro', sans-serif;
+                              margin: 50px auto;
+                              letter-spacing: 0.5px;
+                              position: relative;
+                              line-height: 1.4em;
+                              font-size: 1.03em;
+                              padding: 30px;
+                              list-style: none;
+                              text-align: left;
+                              font-weight: 1;
+                              max-width: 50%;
+                              }
+                              @media screen and (max-width:600px){
+                              .timeline{
+                              max-width:75%;
+                              }
+                              }
+                              .timeline h1,
+                              .timeline h2,
+                              .timeline h3 {
+                              font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+                              font-family: 'Oswald', sans-serif;
+                              letter-spacing: 1.5px;
+                              font-weight: 100;
+                              font-size: 1.4em;
+                              color: #ccc!important;
+                              }
+                              .timeline .event {
+                              border-bottom: 1px dashed #4298c3;
+                              padding-bottom: 25px;
+                              margin-bottom: 50px;
+                              position: relative;
+                              }
+                              .timeline .event:last-of-type {
+                              padding-bottom: 0;
+                              margin-bottom: 0;
+                              border: none;
+                              }
+                              .timeline .event:before,
+                              .timeline .event:after {
+                              position: absolute;
+                              display: block;
+                              top: 0;
+                              }
+                              .timeline .event:before {
+                              left: -217.5px;
+                              color: #ccc;
+                              content: attr(data-date);
+                              text-align: right;
+                              font-weight: 400;
+                              font-size: 0.9em;
+                              min-width: 120px;
+                              }
+                              .timeline .event:after {
+                              box-shadow: 0px 0 0px 4px #285f87;
+                              left: -57.85px;
+                              background: #ccc;
+                              border-radius: 50%;
+                              height: 8px;
+                              width: 8px;
+                              content: "";
+                              top: 5px;
+                              }
+                              @media (max-width: 800px) {
+                              .timeline .event:before {
+                              left: -0.5px;
+                              top: 50px;
+                              background-color: #4298c3;
+                              color: white;
+                              margin-top: 8px;
+                              padding: 2px 8px 2px 8px;
+                              content: attr(data-date);
+                              text-align: right;
+                              font-weight: 400;
+                              font-size: 0.9em;
+                              min-width: 120px;
+                              }
+                              .timeline .event p {
+                              top: 27px;
+                              padding: 10px 0px 10px 0px;
+                              position: relative;
+                              }
+                              }
+                           </style>
+                           <div id="content">
+                              <h2 style="font-size:1.9em;">Day 1</h2>
+                              <ul class="timeline">
+                                 <li class="event" data-date="6 PM">
+                                    <h3>Offline Registration</h3>
+                                 </li>
+                                 <li class="event" data-date="9 PM">
+                                    <h3>Opening Ceremony</h3>
+                                 </li>
+                                 <li class="event" data-date="12 AM">
+                                    <h3>Hack Starts</h3>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="browseTab">
+                           <div id="content">
+                              <h2 style="font-size:1.9em;">Day 2</h2>
+                              <ul class="timeline">
+                                 <li class="event" data-date="2 AM">
+                                    <h3>Midnight Snacks</h3>
+                                 </li>
+                                 <li class="event" data-date="7 AM">
+                                    <h3>Breakfast</h3>
+                                 </li>
+                                 <li class="event" data-date="11 AM">
+                                    <h3>Talk</h3>
+                                 </li>
+                                 <li class="event" data-date="12.30 PM">
+                                    <h3>Lunch</h3>
+                                 </li>
+                                 <li class="event" data-date="5 PM">
+                                    <h3>Talk</h3>
+                                 </li>
+                                 <li class="event" data-date="8 PM">
+                                    <h3>Dinner</h3>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="farziTab">
+                           <div id="content">
+                              <h2 style="font-size:1.9em;">Day 3</h2>
+                              <ul class="timeline">
+                                 <li class="event" data-date="2 AM">
+                                    <h3>Midnight Snacks</h3>
+                                 </li>
+                                 <li class="event" data-date="7 AM">
+                                    <h3>Breakfast</h3>
+                                 </li>
+                                 <li class="event" data-date="12 PM">
+                                    <h3>Hack Ends</h3>
+                                 </li>
+                                 <li class="event" data-date="12.30 PM">
+                                    <h3>Lunch</h3>
+                                 </li>
+                                 <li class="event" data-date="1 PM">
+                                    <h3>Presentation Start</h3>
+                                 </li>
+                                 <li class="event" data-date="4 PM">
+                                    <h3>Prize Distribution</h3>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="modal-footer" style="background: url(pattern.png);
+                  border-radius:0 0 5px 5px ;text-align:center;">
+                  <button type="button" class="btn btn-default" data-dismiss="modal" style="font-weight:900;">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="regModal" class="modal fade" role="dialog">
+         <div class="modal-dialog modal-sm">
+            <!-- Modal content-->
+            <div class="modal-content">
+               <div class="modal-header" style="background: url(pattern.png);
+                  border-radius: 5px 5px 0 0;">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span style="color:white;" aria-hidden="true">&times;</span>
+                  </button>
+                  <h4 class="modal-title" id="regModalLabel">Registration</h4>
+               </div>
+               <div class="modal-body" style="height:150px;">
+                  <h3 style="color:#ccc;text-align:center;">Registration will begin soon.</h3>
+               </div>
+               <div class="modal-footer" style="background: url(pattern.png);
+                  border-radius:0 0 5px 5px ;text-align:center;">
+                  <button type="button" class="btn btn-default" data-dismiss="modal" style="font-weight:900;">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script type="text/javascript">
+         function addImage(pk) {
+             alert("addImage: " + pk);
+         }
+         
+         $('#myModal .save').click(function (e) {
+             e.preventDefault();
+             addImage(5);
+             $('#myModal').modal('hide');
+             //$(this).tab('show')
+             return false;
+         })
+      </script>
+      <script type="text/javascript">
+         $(".hover").mouseleave(
+         function () {
+           $(this).removeClass("hover");
+         }
+         );
+            
+         
+         $(window).scroll(function() {   
+         if($(window).scrollTop() + $(window).height() == $(document).height()) {
+          alert("bottom!");
+         }
+         });
+         
+      </script>
+      <script src="js/main.js"></script>
+   </body>
+</html>
